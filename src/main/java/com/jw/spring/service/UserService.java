@@ -1,9 +1,9 @@
-package service;
+package com.jw.spring.service;
 
-import entity.User;
-import mapper.UserMapper;
+
+import com.jw.spring.entity.User;
+import com.jw.spring.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 /**

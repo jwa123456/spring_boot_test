@@ -1,4 +1,4 @@
-package entity;
+package com.jw.spring.entity;
 
 /**
  * Created by jiang wei on 2016/12/2.

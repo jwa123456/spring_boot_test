@@ -1,5 +1,4 @@
-package server;
-
+package com.jw.spring;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.log4j.Logger;
@@ -15,17 +14,14 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by jiang wei on 2016/12/2.
  */
 @EnableAutoConfiguration
 @SpringBootApplication
-@ComponentScan("controller")
-@RestController
-@MapperScan("mapper")
+@ComponentScan
+@MapperScan("com.jw.spring.mapper")
 public class Application {
 
     private static Logger logger = Logger.getLogger(Application.class);
@@ -55,10 +51,6 @@ public class Application {
         return new DataSourceTransactionManager(dataSource());
     }
 
-    @RequestMapping("/")
-    public String greeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);

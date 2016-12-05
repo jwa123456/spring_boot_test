@@ -1,12 +1,12 @@
-package controller;
+package com.jw.spring.controller;
 
-import entity.User;
+import com.jw.spring.entity.User;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import service.UserService;
+import com.jw.spring.service.UserService;
 
 /**
  * Created by jw on 16-12-3.
