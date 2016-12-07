@@ -3,7 +3,7 @@
 <mapper namespace="com.jw.spring.mapper.UserMapper">
 
     <select id="findUserInfo" resultType="com.jw.spring.entity.User">
-        select name, age,password from user;
+        select * from user;
     </select>
 
 </mapper>
