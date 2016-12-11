@@ -14,6 +14,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class TestController {
     private Logger logger = Logger.getLogger(TestController.class);
 
+    /**
+     * 这里是返回view的方法,view放在resources的templates里
+     * @param name
+     * @param model
+     * @return
+     */
     @RequestMapping("/first")
     public String firstMethod(@RequestParam(value = "name", required = false, defaultValue = "aaa") String name, Model model) {
         logger.info("hello");
